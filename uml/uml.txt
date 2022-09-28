@@ -1,0 +1,38 @@
+@startuml
+
+class Server{
++start
+-method: String
+
+}
+
+class RequestBuilder{
+ -method:String
+ -path:String
+ -content: String
+ -contentType: String
+ -contentLength: Integer
+}
+
+class Request{
+ -method:String
+ -path:String
+ -content: String
+ -contentType: String
+ -contentLength: Integer
+}
+
+class Application{
+
+}
+
+class Response {
+ -contentType: String
+ -contentLength: Integer
+ -statuscode: Integer
+ -message:String
+}
+
+
+
+@enduml
